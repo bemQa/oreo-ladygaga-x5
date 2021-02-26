@@ -3046,6 +3046,7 @@ table td:nth-child(3) {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100px;
+    min-width: 100px;
     margin-right: 10px;
 }
 
@@ -3054,7 +3055,8 @@ table td:nth-child(3) {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 80px;
+    max-width: 70px;
+    min-width: 70px;
     margin-right: 25px;
 }
 
