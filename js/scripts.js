@@ -233,7 +233,7 @@ $(document).ready(function () {
         .on('update.countdown', function(event) {
             var $this = $(this);
             if (event.elapsed) {
-                $this.html(event.strftime('<span>%M:%S</span>'));
+                $this.html(event.strftime('<span>'+ event.offset.totalMinutes +':%S</span>'));
             } else {
                 $this.html(event.strftime('<span>%M:%S</span>'));
             }
