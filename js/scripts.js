@@ -225,4 +225,25 @@ $(document).ready(function () {
         slidesToScroll: 1,
         swipe: false
     });
+
+    function top1Timer() {
+        var date = String($('#hit-parade-timer').data('countdown'));
+        var finalDate = new Date(date).getTime();
+        $('#hit-parade-timer').countdown(finalDate, { elapse: true })
+        .on('update.countdown', function(event) {
+            var $this = $(this);
+            if (event.elapsed) {
+                $this.html(event.strftime('<span>%M:%S</span>'));
+            } else {
+                $this.html(event.strftime('<span>%M:%S</span>'));
+            }
+        });
+    }
+
+    top1Timer();
+
+    setTimeout(function(){
+        $('.top1-hit-parade .new-lider').fadeIn();
+        $('.top1-hit-parade .new-lider').delay(2000).fadeOut();
+    }, 3000);
 });
