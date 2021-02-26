@@ -261,7 +261,7 @@
 				<div class="footer-wrapper">
 					<div class="footer-contacts">
 						<a href="tel:8-800-555-8000" class="footer-phone invert-link">8-800-555-8000</a>
-						<a href="mailto:music@oreo.ru" class="footer-mail link">music@oreo.ru</a>
+						<a href="mailto:x5@oreo.ru" class="footer-mail link">x5@oreo.ru</a>
 					</div>
 					<div class="footer-copyright">
 						<div class="mndlz">
@@ -316,7 +316,7 @@
                 </div>
             </div>
 		</div>
-		<div id="reg" class="popup">
+		<div id="reg" class="popup long-popup">
 			<div class="popup__wrap">
 				<a href="#!" class="close-popup js-close-popup">
 					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -415,7 +415,7 @@
 				</a>
                 <div class="popup__inner">
                 	<div class="popup__title">Регистрация пройдена</div>
-                    <div class="popup__desc">Пароль для входа на сайт отправлен на электронную почту указанную при регистрации</div>
+                    <div class="popup__desc">Пароль для входа на сайт отправлен на номер телефона указанный при регистрации</div>
                     <div class="btn-wrapper">
 						<a href="#!" class="btn popup-btn pop-op" data-popup="auth">Войти</a>
 					</div>
@@ -448,7 +448,7 @@
                 </div>
             </div>
 		</div>
-		<div id="reg-code" class="popup">
+		<div id="store" class="popup">
 			<div class="popup__wrap">
 				<a href="#!" class="close-popup js-close-popup">
 					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -457,37 +457,21 @@
 					</svg>
 				</a>
                 <div class="popup__inner">
-                    <div class="popup__title">Зарегистрировать <br>новый код</div>
-                    <div class="popup__error"></div>
-                    <form class="popup-form">
-                    	<div class="input-field">
-                    		<input type="text" name="code" placeholder="Ввести код с упаковки" required>
-                    	</div>
-                    	<a href="#!" class="link pop-op" data-popup="how-code">Где найти код?</a>
-                    	<div class="btn-wrapper">
-							<button class="btn popup-btn">Отправить</button>
-						</div>
-                    </form>
+                    <div class="popup__title">Выберите сеть</div>
+                    <div class="btn-wrapper mb20">
+                    	<a href="#!" class="btn-store pop-op" data-popup="check-upload">
+                    		<img src="img/btn-5ka.svg" alt="">
+                    	</a>
+                    </div>
+                    <div class="btn-wrapper">
+                    	<a href="#!" class="btn-store pop-op" data-popup="check-upload">
+                    		<img src="img/btn-perek.svg" alt="">
+                    	</a>
+                    </div>
                 </div>
             </div>
 		</div>
-		<div id="reg-code-success" class="popup">
-		    <div class="popup__wrap">
-		        <a href="#!" class="close-popup js-close-popup">
-		            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-		                <path d="M14 2L2 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-		                <path d="M2 2L14 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-		            </svg>
-		        </a>
-		        <div class="popup__inner">
-		            <div class="popup__title">Код принят</div>
-		            <div class="btn-wrapper">
-		                <a href="#!" class="btn popup-btn js-close-popup">Ок</a>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-		<div id="how-code" class="popup">
+		<div id="check-upload" class="popup">
 			<div class="popup__wrap">
 				<a href="#!" class="close-popup js-close-popup">
 					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -496,35 +480,10 @@
 					</svg>
 				</a>
                 <div class="popup__inner">
-                    <div class="popup__title">Где найти код?</div>
-                    <div class="popup__desc mb5">
-                    	Ищи код <b>внутри</b> промоупаковок <br>38г, 95г и 228г всех вкусов
+                    <div class="popup__title">Загрузка чека</div>
+                    <div class="iframe-wrap">
+                        <!-- <iframe src="https://checkservice.emg.ru/Upload?id=630b7ffa-2815-4c9b-96f8-b485c73a1ed9&participantId=1&hash=1958d3842a1595b11ec2c7ed5e9e6305" class="iframe" frameborder="0"></iframe> -->
                     </div>
-                    <div class="how-code-img">
-                    	<img srcset="img/plug/pack.png 1x, img/plug/pack@2x.png 2x" alt="">
-                    </div>
-                    <div class="btn-wrapper">
-						<a href="#!" class="btn popup-btn js-close-popup">Понятно</a>
-					</div>
-                </div>
-            </div>
-		</div>
-		<div id="soon" class="popup">
-			<div class="popup__wrap">
-				<a href="#!" class="close-popup js-close-popup">
-					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M14 2L2 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-						<path d="M2 2L14 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-				</a>
-                <div class="popup__inner">
-                    <div class="popup__title">СОВСЕМ СКОРО!</div>
-                    <div class="popup__desc">
-                    	А пока сохраняй коды с промоупаковок и регистрируй их на сайте с 1 марта
-                    </div>
-                    <div class="btn-wrapper">
-						<a href="#!" class="btn popup-btn js-close-popup">Понятно</a>
-					</div>
                 </div>
             </div>
 		</div>
