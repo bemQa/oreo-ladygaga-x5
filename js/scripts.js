@@ -228,14 +228,16 @@ $(document).ready(function () {
 
     function top1Timer() {
         var date = String($('#hit-parade-timer').data('countdown'));
-        var finalDate = new Date(date).getTime();
+        var finalDate = new Date(date);
+        var offset = 180;
+        finalDate.setMinutes(finalDate.getMinutes() - finalDate.getTimezoneOffset() - offset);
         $('#hit-parade-timer').countdown(finalDate, { elapse: true })
         .on('update.countdown', function(event) {
             var $this = $(this);
             if (event.elapsed) {
                 $this.html(event.strftime('<span>'+ event.offset.totalMinutes +':%S</span>'));
             } else {
-                $this.html(event.strftime('<span>%M:%S</span>'));
+                $this.html(event.strftime('<span>'+ event.offset.totalMinutes +':%S</span>'));
             }
         });
     }

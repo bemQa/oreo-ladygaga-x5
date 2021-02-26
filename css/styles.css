@@ -3058,6 +3058,10 @@ table td:nth-child(3) {
     margin-right: 25px;
 }
 
+.top10-hit-parade-wrapper {
+    min-height: 252px;
+}
+
 .top10-hit-parade {
     position: relative;
     display: flex;
@@ -3331,10 +3335,6 @@ table td:nth-child(3) {
     margin-top: 125px;
 }
 
-.cookies-page .container {
-    max-width: 1300px;
-}
-
 .cookies-page p {
     font-size: 21px;
     line-height: 152%;
@@ -3443,61 +3443,40 @@ table td:nth-child(3) {
         max-width: 480px;
     }
 
-    .prize {
-        max-width: 430px;
-    }
-
-    .big-prize,
-    .main-prize {
-        max-width: 480px;
-    }
-
-    .prize::before {
-        top: -40px;
-        width: 380px;
-        height: 380px;
-    }
-
-    .big-prize::before,
-    .main-prize::before {
-        width: 450px;
-        height: 450px;
-    }
-
-    .prize:nth-child(2) {
-        margin-bottom: 50px;
-    }
-
-    .big-prize .prize-img,
-    .main-prize .main-prize-img {
-        height: 358px;
-    }
-
-    .main-block::before {
-        background-position: 450px 0;
-    }
-
-    .main-block .player {
-        top: 430px;
-        right: -25%;
-        width: 300px;
-    }
-
     .main-decor1 {
-        left: -90%;
+        left: -590px;
+    }
+
+    .main-decor5 {
+        left: -820px;
     }
 
     .main-decor6 {
-        left: -5%;
+        right: -890px;
+    }
+
+    .main-decor7 {
+        left: -880px;
+    }
+
+    .main-decor8 {
+        right: -900px;
+    }
+
+    .main-block::before {
+        left: -1240px;
+    }
+
+    .ladygaga-text-img {
+        left: -860px;
+        width: 110px;
     }
 }
 
 @media (max-width: 1000px) {
 	.container,
     footer .container,
-    .lk-page .container,
-    .prizes-page .container,
-    .main-page .container {
+    .lk-page .container {
 		max-width: 375px;
     }
 
@@ -4010,154 +3989,66 @@ table td:nth-child(3) {
         margin: 0 auto 20px;
     }
 
-    .prizes-page-top {
-        min-height: 500px;
-    }
-
-    .prizes-page-top .inner-decor2 {
-        top: 360px;
-    }
-
-    .prizes-page-top .player {
-        top: 430px;
-    }
-    
-    .prizes-page-title {
-        padding-top: 70px;
-        text-shadow: none;
-    }
-
-    .prizes {
-        padding-bottom: 0;
-    }
-
-    .prize,
-    .big-prize,
-    .main-prize {
-        max-width: 318px;
-    }
-
-    .prize::before,
-    .big-prize::before,
-    .main-prize::before {
-        top: -30px;
-        width: 310px;
-        height: 310px;
-    }
-
-    .prize:nth-child(2) {
-        margin: 50px 0 110px auto;
-    }
-
-    .prize:nth-child(3) {
-        margin: 0 0 110px 0;
-    }
-
-    .prize:nth-child(4) {
-        margin: 0 0 100px auto;
-    }
-
-    .prize:nth-child(5) {
-        margin: 0 0 110px 0;
-    }
-
-    .prize:nth-child(6) {
-        margin: 0 0 0 auto;
-    }
-
-    .prize-img,
-    .big-prize .prize-img,
-    .main-prize .main-prize-img {
-        height: 237px;
-        box-shadow: 11.0345px 11.0345px 11.0345px rgba(0, 0, 0, 0.25);
-        margin-bottom: 10px;
-    }
-
-    .prize:nth-child(2) .prize-img img {
-        max-width: 203px;
-    }
-
-    .prize-img svg {
-        top: -15px;
-        max-width: 157px;
-    }
-
-    .prize:nth-child(5) .prize-img img {
-        max-width: 178px;
-    }
-
-    .prize:nth-child(6) .prize-img img {
-        max-width: 278px;
-    }
-
-    .prize-text,
-    .prize-name,
-    .main-prize-text,
-    .main-prize-name {
-        font-size: 14px;
-        line-height: 19px;
-    }
-
-    .oreo-pack {
-        position: relative;
-        bottom: auto;
+    .main-decor3 {
+        top: 580px;
         left: auto;
-    }
-
-    .oreo-pack-text {
-        position: relative;
-        bottom: auto;
-        right: auto;
-        text-align: center;
-    }
-
-    .main-decor2 {
-        top: 365px;
-        left: -240px;
-        right: 0;
-        margin: auto;
-        width: 150px;
-        height: 131px;
-        background: url(../img/main-decor2-mob.png) center no-repeat;
+        right: -10px;
+        width: 83px;
+        height: 99px;
+        background: url(../img/main-decor3-mob.png) center no-repeat;
         background-size: contain;
     }
 
-    .main-block .player {
-        top: 500px;
-        left: -300px;
-        right: 0;
-        width: 240px;
-        height: 210px;
-        transform: rotate(-10deg);
-    }
-
-    .main-decor3 {
-        top: -60px;
-        left: -20px;
-        right: auto;
-        width: 170px;
-        height: 179px;
-    }
-
     .main-decor5 {
-        top: 50px;
-        left: -40px;
+        top: 990px;
+        left: auto;
+        right: -70px;
+        width: 166px;
+        height: 214px;
+        background: url(../img/main-decor5-mob.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .main-decor6 {
+        top: 400px;
+        left: -70px;
         right: auto;
-        width: 312px;
-        height: 197px;
+        width: 215px;
+        height: 212px;
+        background: url(../img/main-decor6-mob.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .main-decor7 {
+        top: -60px;
+        left: -50px;
+        right: auto;
+        width: 161px;
+        height: 166px;
+        background: url(../img/main-decor7-mob.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .main-decor8 {
+        top: -50px;
+        left: auto;
+        right: -50px;
+        width: 161px;
+        height: 166px;
+        background: url(../img/main-decor8-mob.png) center no-repeat;
+        background-size: contain;
     }
 
     .main-block {
-        min-height: 800px;
-        padding: 0;
+        padding: 0 0 50px;
     }
 
     .main-block::before {
-        top: 340px;
-        left: -250px;
-        right: -250px;
-        width: 805px;
-        height: 550px;
+        top: -90px;
+        left: 0;
+        right: auto;
+        width: 267px;
+        height: 224px;
         background: url(../img/bg-main-mob.png) center bottom no-repeat;
         background-size: cover;
     }
@@ -4169,91 +4060,72 @@ table td:nth-child(3) {
         max-width: 375px;
     }
 
-    .main-block-left .logo {
-        max-width: 199px;
-        margin-bottom: 25px;
-    }
-
-    .main-block-title {
-        font-size: 28px;
-        line-height: 30px;
-    }
-
-    .main-block-text {
-        font-size: 16px;
-        line-height: 20px;
+    .kv {
+        top: -30px;
+        width: 367px;
+        height: 337px;
     }
 
     .main-block-left {
-        margin-bottom: 110px;
+        position: static;
+        padding-top: 0;
     }
 
     .main-block-right {
-        display: flex;
+        margin-top: 270px;
+        margin-bottom: 40px;
+        order: -1;
+    }
+
+    .top10-hit-parade-wrapper {
+        min-height: auto;
+    }
+
+    .steps-block {
+        margin-bottom: 70px;
+    }
+
+    .steps {
         flex-direction: column;
-        -ms-align-items: flex-end;
-        align-items: flex-end;
-        max-width: 188px;
+        margin-bottom: 50px;
+    }
+
+    .step {
+        margin: 20px auto;
+    }
+
+    .prize {
+        margin: 30px 0;
+    }
+
+    .prize:nth-child(odd) {
+        margin-right: auto;
+    }
+
+    .prize:nth-child(even) {
         margin-left: auto;
     }
 
-    .ladygaga-text-img {
-        margin: 0 auto 20px;
+    .exclusive-prizes-block {
+        padding: 130px 0 20px;
+        background: url(../img/bg-exclusive-mob.png) center 0 no-repeat;
+        background-size: 100% 100%;
     }
 
-    .ladygaga-text {
-        font-size: 14px;
-        line-height: 18px;
-        text-align: center;
-    }
-
-    .ladygaga-text span {
-        font-size: 16px;
-        line-height: 20px;
-        margin-bottom: 10px;
-    }
-
-    .main-block2 {
+    .exclusive-prizes {
         flex-direction: column;
-        margin: 200px auto 30px;
-    }
-
-    .main-block2-card {
-        height: auto;
-        margin-bottom: 40px;
-    }
-
-    .main-block2-card-img {
-        height: 200px;
-        margin-bottom: 20px;
-        box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.27);
-    }
-
-    .main-block2-card-text {
+        -ms-align-items: center;
+        align-items: center;
         margin-bottom: 20px;
     }
 
-    .main-block2-card .btn-wrapper {
-        position: relative;
-        bottom: auto;
+    .exclusive-prize {
+        margin: 25px auto;
     }
 
-    .main-page .title {
-        font-size: 30px;
-        line-height: 1.3;
-    }
-
-    .main-prizes {
-        flex-direction: column;
-        margin-top: 50px;
-    }
-
-    .main-prize {
-        margin: 0 auto;
-    }
-
-    .main-prize:first-child {
-        margin-bottom: 50px;
+    .next-draw-date {
+        font-size: 58px;
+        line-height: 70px;
     }
 
     .main-cookie-h1 {
@@ -4373,10 +4245,5 @@ table td:nth-child(3) {
     .prize:nth-child(1) .prize-img,
     .main-prize .main-prize-img {
         height: 216px;
-    }
-
-    .main-page .title {
-        font-size: 25px;
-        line-height: 1.2;
     }
 }
