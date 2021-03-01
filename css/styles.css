@@ -3060,6 +3060,10 @@ table td:nth-child(3) {
     margin-right: 25px;
 }
 
+.top10-hit-parade .hit-parade-count {
+    min-width: 22px;
+}
+
 .top10-hit-parade-wrapper {
     min-height: 252px;
 }
