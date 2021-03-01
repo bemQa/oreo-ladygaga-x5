@@ -226,14 +226,10 @@ $(document).ready(function () {
         swipe: false
     });
 
-    // в date передать дату полученную с бэка
-
     function top1Timer(date) {
-        // var date = String($('#hit-parade-timer').data('countdown'));
-        var finalDate = new Date(date);
-        // var offset = 180;
-        // finalDate.setMinutes(finalDate.getMinutes() - finalDate.getTimezoneOffset() - offset);
-        $('#hit-parade-timer').countdown(finalDate, { elapse: true })
+        var date = String($('#hit-parade-timer').data('countdown'));
+        var finalDate = moment.tz(date, "Europe/Moscow");
+        $('#hit-parade-timer').countdown(finalDate.toDate(), { elapse: true })
         .on('update.countdown', function(event) {
             var $this = $(this);
             if (event.elapsed) {
