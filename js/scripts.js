@@ -227,9 +227,9 @@ $(document).ready(function () {
     });
 
     function top1Timer(date) {
-        var date = String($('#hit-parade-timer').data('countdown'));
-        var finalDate = moment.tz(date, "Europe/Moscow");
-        $('#hit-parade-timer').countdown(finalDate.toDate(), { elapse: true })
+        var finalDate = new Date();
+        finalDate = finalDate.setTime(finalDate.getTime() - (date*1000));
+        $('#hit-parade-timer').countdown(finalDate, { elapse: true })
         .on('update.countdown', function(event) {
             var $this = $(this);
             if (event.elapsed) {
@@ -239,8 +239,8 @@ $(document).ready(function () {
             }
         });
     }
-
-    top1Timer();
+    // date - 360 секунд (6 минут)
+    top1Timer(360);
 
     setTimeout(function(){
         $('.top1-hit-parade .new-lider').fadeIn();
