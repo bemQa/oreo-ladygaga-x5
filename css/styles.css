@@ -3050,6 +3050,10 @@ table td:nth-child(3) {
     margin-right: 10px;
 }
 
+.top1-hit-parade .hit-parade-count {
+    min-width: 35px;
+}
+
 .top10-hit-parade .hit-parade-name {
     display: block;
     white-space: nowrap;
@@ -3061,7 +3065,7 @@ table td:nth-child(3) {
 }
 
 .top10-hit-parade .hit-parade-count {
-    min-width: 22px;
+    min-width: 30px;
 }
 
 .top10-hit-parade-wrapper {
