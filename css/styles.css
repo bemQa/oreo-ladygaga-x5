@@ -2833,7 +2833,7 @@ table td:nth-child(3) {
 
 .main-decor6 {
     position: absolute;
-    top: 700px;
+    top: 550px;
     left: 0;
     right: -1200px;
     margin: auto;
@@ -3130,7 +3130,7 @@ table td:nth-child(3) {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    max-width: 256px;
+    max-width: 260px;
     width: 100%;
     margin: 0 auto;
 }
@@ -3178,6 +3178,7 @@ table td:nth-child(3) {
 }
 
 .prizes-subtitle {
+    position: relative;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
@@ -3189,6 +3190,38 @@ table td:nth-child(3) {
     flex-wrap: wrap;
     justify-content: center;
     margin: 30px auto 0;
+}
+
+.prizes-label {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 100px;
+    background: url(../img/prize-bg.png) center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.prizes-label-title {
+    font-size: 34px;
+    line-height: 1;
+}
+
+.prizes-label-title span {
+    font-weight: bold;
+}
+
+.prizes-label-text {
+    font-size: 18px;
+    line-height: 1;
 }
 
 .prize {
@@ -3317,6 +3350,16 @@ table td:nth-child(3) {
     line-height: 25px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.color-5ka {
+    padding: 2px;
+    background: #E52415;
+}
+
+.color-perek {
+    padding: 2px;
+    background: #0F9949;
 }
 
 .next-draw {
@@ -4102,6 +4145,18 @@ table td:nth-child(3) {
 
     .step {
         margin: 20px auto;
+    }
+
+    .prizes-subtitle {
+        padding-bottom: 120px;
+    }
+
+    .prizes-label {
+        top: 70px;
+        left: -500px;
+        right: -500px;
+        width: 1000px;
+        margin: auto;
     }
 
     .prize {
