@@ -2500,6 +2500,10 @@ table td:nth-child(3) {
     min-width: 100px;
 }
 
+.lk-table table td:nth-child(3) {
+    min-width: 120px;
+}
+
 .lk-table .check-preview {
     width: 44px;
     height: 44px;
@@ -3938,6 +3942,10 @@ table td:nth-child(3) {
         vertical-align: middle;
         font-size: 14px;
         line-height: 17px;
+    }
+
+    .lk-table table td:nth-child(3) {
+        min-width: 60px;
     }
 
 	.winners-page {
